@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+
+public class ass_1_9 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter number which you want to check the number is palindrome or not : ");
+        int number = s.nextInt();
+        int num = number;
+        int reversed = 0;
+        while(num != 0) {
+            int remainder = num % 10;
+            reversed += (remainder * remainder * remainder);
+            num /= 10;
+        }
+		if (reversed == number){
+			System.out.println("is Armstorng");
+		}
+		else{
+			System.out.println("is not Armstorng");
+		}
+
+    }
+}
+
+
+
