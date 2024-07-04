@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ass_1_6{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+	System.out.print("Enter number1 : ");
+        int a  = s.nextInt();
+	System.out.print("Enter number2 : ");
+        int b  = s.nextInt();
+        
+	System.out.print("Mean number of " + a + " and " + b + " " + ((a+b)/2));
+        
+    }
+}
